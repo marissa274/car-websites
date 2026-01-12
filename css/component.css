@@ -14,42 +14,161 @@
   box-shadow: 0 0 24px rgba(124,92,255,.65);
 }
 .logoAccent{ color: rgba(255,255,255,.98); }
- 
 
-.primaryBtn, .pillBtn, .iconBtn{
+
+button,
+.primaryBtn,
+.pillBtn,
+.iconBtn {
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease,
+    background .15s ease,
+    filter .15s ease;
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 14px 22px;
   border-radius: 999px;
   font-weight: 900;
-  cursor:pointer;
-  border: 1px solid transparent;
-}
+  font-size: 15px;
 
-.primaryBtn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap: 8px;
-  padding: 12px 18px;
-  background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(0,212,255,.75));
   color: #05070b;
-  box-shadow: 0 14px 40px rgba(124,92,255,.25);
-}
-.primaryBtn:hover{ filter: brightness(1.05); }
+  background:
+    linear-gradient(135deg,
+      rgba(124,92,255,.95),
+      rgba(0,212,255,.85)
+    );
 
-.pillBtn{
-  padding: 10px 16px;
-  background: var(--panel);
-  border: 1px solid var(--border);
+  border: none;
+  box-shadow:
+    0 14px 40px rgba(124,92,255,.35),
+    inset 0 0 0 1px rgba(255,255,255,.15);
+}
+
+.primaryBtn:hover {
+  filter: brightness(1.08);
+  box-shadow:
+    0 18px 55px rgba(124,92,255,.45),
+    0 0 18px rgba(0,212,255,.35);
+}
+
+ 
+
+.pillBtn {
+  padding: 12px 18px;
+  border-radius: 999px;
+
+  font-weight: 850;
+  font-size: 14px;
+
   color: var(--text);
-}
-.pillBtn:hover{ background: var(--panel2); }
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.16);
 
-.iconBtn{
-  padding: 10px 12px;
+  backdrop-filter: blur(10px);
+}
+
+.pillBtn:hover {
+  background: rgba(255,255,255,.12);
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+}
+
+.ghostBtn {
+  padding: 12px 20px;
+  border-radius: 999px;
+
+  font-weight: 800;
+  font-size: 14px;
+
   background: transparent;
+  color: var(--text);
+
   border: 1px solid var(--border);
+}
+
+.ghostBtn:hover {
+  background: rgba(255,255,255,.06);
+  box-shadow: inset 0 0 0 1px rgba(124,92,255,.25);
+}
+
+.iconBtn {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  color: var(--text);
+
+  font-size: 18px;
+}
+
+.iconBtn:hover {
+  background: rgba(124,92,255,.18);
+  box-shadow: 0 0 18px rgba(124,92,255,.45);
+}
+
+.favBtn {
+  width: 44px;
+  height: 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 900;
+
+  background: rgba(124,92,255,.12);
+  border: 1px solid rgba(124,92,255,.35);
+  color: #fff;
+}
+
+.favBtn:hover {
+  box-shadow: 0 0 20px rgba(124,92,255,.45);
+}
+
+.favBtn.active {
+  background: rgba(255,77,109,.18);
+  border-color: rgba(255,77,109,.45);
+  color: #ff4d6d;
+  box-shadow: 0 0 22px rgba(255,77,109,.55);
+}
+
+.smallBtn {
+  padding: 10px 14px;
+  border-radius: 14px;
+
+  font-weight: 850;
+  font-size: 14px;
+
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
   color: var(--text);
 }
-.iconBtn:hover{ background: var(--panel); }
+
+.smallBtn:hover {
+  background: rgba(255,255,255,.12);
+}
+
+
 
 .badge{
   display:inline-flex;
