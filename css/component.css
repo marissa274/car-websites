@@ -1,0 +1,22 @@
+.primaryBtn {
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  border:none;
+  padding:12px 20px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.pillBtn {
+  background:var(--panel);
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+.card {
+  background:var(--panel);
+  border:1px solid var(--border);
+  padding:16px;
+  border-radius:16px;
+}
