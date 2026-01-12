@@ -11,8 +11,15 @@ const parts = [
   ["modal-favorites","html/modal-favorites.html"]
 ];
 
-parts.forEach(([id,file])=>{
-  fetch(file).then(r=>r.text()).then(html=>{
-    document.getElementById(id).innerHTML = html;
-  });
+function loadOne([id, file]) {
+  return fetch(file)
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById(id).innerHTML = html;
+    });
+}
+
+Promise.all(parts.map(loadOne)).then(() => {
+
+  if (typeof init === "function") init();
 });

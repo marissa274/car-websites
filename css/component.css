@@ -277,3 +277,56 @@ input:focus, select:focus, textarea:focus{
   color: var(--muted);
   font-weight: 750;
 }
+
+
+.carCardImage {
+  padding: 0;
+  overflow: hidden;
+}
+
+.carImageWrap {
+  position: relative;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carImageWrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top,
+    rgba(255,255,255,.15),
+    transparent 60%);
+}
+
+.carImageWrap img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  z-index: 1;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,.6));
+  transition: transform .25s ease;
+}
+
+.carCardImage:hover img {
+  transform: scale(1.05) translateY(-4px);
+}
+
+.carCardImage h3 {
+  margin: 12px 16px 4px;
+}
+
+.carCardImage p {
+  margin: 0 16px 6px;
+}
+
+.carCardImage .price {
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.carCardImage .smallBtn {
+  margin: 0 16px 16px;
+}

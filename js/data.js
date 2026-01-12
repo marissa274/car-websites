@@ -4,7 +4,7 @@ const cars = [
     name: "Aston Martin Green",
     brand: "Aston Martin",
     price: 180000,
-    image: "assets/cars/aston-green.png",
+    image: "images/aston-green.png",
     bg: "linear-gradient(135deg, #0f3d3a, #0b1f1d)"
   },
   {
@@ -12,7 +12,7 @@ const cars = [
     name: "Aston Martin Black",
     brand: "Aston Martin",
     price: 165000,
-    image: "assets/cars/aston-black.png",
+    image: "images/aston-black.png",
     bg: "linear-gradient(135deg, #111, #000)"
   },
   {
@@ -20,7 +20,7 @@ const cars = [
     name: "Cybertruck Gray",
     brand: "Tesla",
     price: 120000,
-    image: "assets/cars/cybertruck-gray.png",
+    image: "images/cybertruck-gray.png",
     bg: "linear-gradient(135deg, #3a3a3a, #141414)"
   },
   {
@@ -28,7 +28,7 @@ const cars = [
     name: "Cybertruck Black",
     brand: "Tesla",
     price: 125000,
-    image: "assets/cars/cybertruck-black.png",
+    image: "images/cybertruck-black.png",
     bg: "linear-gradient(135deg, #111, #050505)"
   },
   {
@@ -36,7 +36,7 @@ const cars = [
     name: "Cybertruck White",
     brand: "Tesla",
     price: 130000,
-    image: "assets/cars/cybertruck-white.png",
+    image: "images/cybertruck-white.png",
     bg: "linear-gradient(135deg, #e6e6e6, #9a9a9a)"
   },
   {
@@ -44,7 +44,7 @@ const cars = [
     name: "Aston Concept",
     brand: "Aston Martin",
     price: 250000,
-    image: "assets/cars/aston-concept.png",
+    image: "images/aston-concept.png",
     bg: "linear-gradient(135deg, #1b3a5f, #0b1322)"
   }
 ];
